@@ -45,3 +45,13 @@ A simple note Android application using Room, Live Data, and MVVM. This applicat
 - Material design
     
         - implementation 'com.google.android.material:material:1.1.0'
+
+# Screnshoot
+
+|<img src=home.gif  align="center" height="400" width="248" ></a> |<img src=add_note.gif  align="center" height="400" width="248" ></a>|<img src=edit_note.gif  align="center" height="400" width="248" ></a>|
+|:-----------:|:--------:|:--------:|
+| *dashboard* | *adding note*|*editing note* |
+
+|<img src=delete_delete_all_notes.gif  align="center" height="400" width="248" ></a> |<img src=cancel_add_note.gif  align="center" height="400" width="248" ></a>|<img src=cancel_edit_note.gif  align="center" height="400" width="248" ></a>|
+|:-----------:|:--------:|:--------:|
+| *delete and delete all notes* | *cancel adding note*|*cancel editing note* |
