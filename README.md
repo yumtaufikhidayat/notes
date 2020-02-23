@@ -40,3 +40,7 @@ A simple note Android application using Room, Live Data, and MVVM. This applicat
 
         - implementation "androidx.room:room-runtime:2.2.4"
         - annotationProcessor "androidx.room:room-compiler:2.2.4"
+
+- Material design
+    
+        - implementation 'com.google.android.material:material:1.1.0'
