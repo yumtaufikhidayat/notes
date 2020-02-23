@@ -35,6 +35,7 @@ dependencies {
 
     implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
     annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
 
     /**
      * Room persistence database
