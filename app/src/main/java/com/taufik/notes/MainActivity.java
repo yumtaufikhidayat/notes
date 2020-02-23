@@ -1,14 +1,21 @@
 package com.taufik.notes;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -25,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
     public static final int ADD_NOTE_REQUEST = 1;
 
     NotesViewModel notesViewModel;
+    final NotesAdapter adapter = new NotesAdapter();
+    RecyclerView recyclerView;
     FloatingActionButton fabAddNote;
 
     @Override
@@ -37,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
         setFABOnClickListener();
 
         setRecyclerView();
-
 
     }
 
@@ -76,11 +84,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setRecyclerView() {
-        RecyclerView recyclerView = findViewById(R.id.recyclerViewMain);
+
+        recyclerView = findViewById(R.id.recyclerViewMain);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
 
-        final NotesAdapter adapter = new NotesAdapter();
         recyclerView.setAdapter(adapter);
 
         notesViewModel = new ViewModelProvider(this).get(NotesViewModel.class);
@@ -90,5 +98,60 @@ public class MainActivity extends AppCompatActivity {
                 adapter.setNotes(notes);
             }
         });
+
+        setItemTouchHelper();
+    }
+
+    private void setItemTouchHelper() {
+        new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT ) {
+            @Override
+            public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
+                return false;
+            }
+
+            @Override
+            public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
+                notesViewModel.delete(adapter.getNoteAt(viewHolder.getAdapterPosition()));
+                Toast.makeText(MainActivity.this, R.string.tvNoteDeleted, Toast.LENGTH_SHORT).show();
+            }
+        }).attachToRecyclerView(recyclerView);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        switch (item.getItemId()) {
+            case R.id.deleteAllNotes:
+                showDeleteAllNotes();
+                return true;
+
+                default:
+                    return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void showDeleteAllNotes() {
+
+        AlertDialog.Builder mAlertDialog = new AlertDialog.Builder(this);
+        mAlertDialog.setMessage(R.string.tvConfirmDelete)
+                .setNegativeButton(R.string.tvNo, null)
+                .setPositiveButton(R.string.tvYes, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        notesViewModel.deleteAllNotes();
+                        Toast.makeText(MainActivity.this, R.string.tvNotesDeleted, Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+        AlertDialog alertDialog = mAlertDialog.create();
+        alertDialog.show();
+
     }
 }

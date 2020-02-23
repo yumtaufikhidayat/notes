@@ -7,9 +7,15 @@
     <string name="tvPriority">Prioritas:</string>
     <string name="tvSave">Simpan</string>
     <string name="tvDelete">Hapus</string>
+    <string name="tvDeleteAllNotes">Delete all notes</string>
     <string name="tvAddNote">Tambah catatan</string>
     <string name="tvAllFieldsRequired">Kolom tidak boleh kosong</string>
     <string name="tvNoteSaved">Catatan tersimpan</string>
+    <string name="tvNoteDeleted">Catatan terhapus</string>
     <string name="tvNoteNotSaved">Catatan tidak tersimpan</string>
     <string name="btnSave">Save</string>
+    <string name="tvConfirmDelete">Hapus catatan?</string>
+    <string name="tvNo">Tidak</string>
+    <string name="tvYes">Ya</string>
+    <string name="tvNotesDeleted">Seluruh catatan dihapus</string>
 </resources>

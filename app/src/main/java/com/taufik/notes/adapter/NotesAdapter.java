@@ -23,6 +23,10 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.MyViewHolder
         notifyDataSetChanged();
     }
 
+    public Notes getNoteAt(int position) {
+        return notes.get(position);
+    }
+
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

@@ -6,9 +6,15 @@
     <string name="tvPriority">Priority:</string>
     <string name="tvSave">Save</string>
     <string name="tvDelete">Delete</string>
+    <string name="tvDeleteAllNotes">Delete all notes</string>
     <string name="tvAddNote">Add note</string>
     <string name="tvAllFieldsRequired">All fields can\'t be empty</string>
     <string name="tvNoteSaved">Note saved</string>
+    <string name="tvNoteDeleted">Note deleted</string>
     <string name="tvNoteNotSaved">Note not saved</string>
     <string name="btnSave">Save</string>
+    <string name="tvConfirmDelete">Delete notes ?</string>
+    <string name="tvNo">No</string>
+    <string name="tvYes">Yes</string>
+    <string name="tvNotesDeleted">All notes deleted</string>
 </resources>

@@ -35,7 +35,7 @@ public class NotesViewModel extends AndroidViewModel {
         repository.delete(notes);
     }
 
-    public void deleteaAllNotes(Notes notes) {
+    public void deleteAllNotes() {
         repository.deleteAllNodes();
     }
 
