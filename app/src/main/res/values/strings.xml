@@ -1,6 +1,14 @@
 <resources>
     <string name="app_name">Notes</string>
-    <string name="tvPriority">1</string>
+    <string name="tvPriorityNumber">1</string>
     <string name="tvTitle">Title</string>
     <string name="tvDescription">Description</string>
+    <string name="tvPriority">Priority:</string>
+    <string name="tvSave">Save</string>
+    <string name="tvDelete">Delete</string>
+    <string name="tvAddNote">Add note</string>
+    <string name="tvAllFieldsRequired">All fields can\'t be empty</string>
+    <string name="tvNoteSaved">Note saved</string>
+    <string name="tvNoteNotSaved">Note not saved</string>
+    <string name="btnSave">Save</string>
 </resources>

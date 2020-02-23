@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Notes</string>
-    <string name="tvPriority">1</string>
+    <string name="tvPriorityNumber">1</string>
     <string name="tvTitle">Judul</string>
     <string name="tvDescription">Deskripsi</string>
+    <string name="tvPriority">Prioritas:</string>
+    <string name="tvSave">Simpan</string>
+    <string name="tvDelete">Hapus</string>
+    <string name="tvAddNote">Tambah catatan</string>
+    <string name="tvAllFieldsRequired">Kolom tidak boleh kosong</string>
+    <string name="tvNoteSaved">Catatan tersimpan</string>
+    <string name="tvNoteNotSaved">Catatan tidak tersimpan</string>
+    <string name="btnSave">Save</string>
 </resources>
