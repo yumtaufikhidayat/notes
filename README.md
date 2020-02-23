@@ -3,7 +3,7 @@ A simple note Android application using Room, Live Data, and MVVM. This applicat
 
 #### Programming Language
 - Language Name : Java
-- Version : 11.0.5
+- Version : 11.0.6
 
 #### IDE (Integrated Development Environment)
 - IDE Name : Android Studio
