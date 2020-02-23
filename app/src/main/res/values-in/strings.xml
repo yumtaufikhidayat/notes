@@ -7,7 +7,7 @@
     <string name="tvPriority">Prioritas:</string>
     <string name="tvSave">Simpan</string>
     <string name="tvDelete">Hapus</string>
-    <string name="tvDeleteAllNotes">Delete all notes</string>
+    <string name="tvDeleteAllNotes">Hapus seluruh catatan</string>
     <string name="tvAddNote">Tambah catatan</string>
     <string name="tvEditNote">Edit catatan</string>
     <string name="tvFailedEditNote">Catatan tidak dapat diperbarui</string>
