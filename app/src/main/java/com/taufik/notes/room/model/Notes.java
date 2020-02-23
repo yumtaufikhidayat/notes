@@ -3,7 +3,7 @@ package com.taufik.notes.room.model;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity (tableName = "notes_table")
+@Entity(tableName = "notes_table")
 public class Notes {
 
     @PrimaryKey(autoGenerate = true)
@@ -21,12 +21,12 @@ public class Notes {
         this.notesPriority = notesPriority;
     }
 
-    public void setNotesId(int notesId) {
-        this.notesId = notesId;
-    }
-
     public int getNotesId() {
         return notesId;
+    }
+
+    public void setNotesId(int notesId) {
+        this.notesId = notesId;
     }
 
     public String getNotesTitle() {

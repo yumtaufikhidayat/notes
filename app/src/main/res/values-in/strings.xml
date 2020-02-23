@@ -14,7 +14,7 @@
     <string name="tvNoteDeleted">Catatan terhapus</string>
     <string name="tvNoteNotSaved">Catatan tidak tersimpan</string>
     <string name="btnSave">Save</string>
-    <string name="tvConfirmDelete">Hapus catatan?</string>
+    <string name="tvConfirmDelete">Hapus seluruh catatan ?</string>
     <string name="tvNo">Tidak</string>
     <string name="tvYes">Ya</string>
     <string name="tvNotesDeleted">Seluruh catatan dihapus</string>

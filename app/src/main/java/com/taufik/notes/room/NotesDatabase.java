@@ -16,8 +16,15 @@ import com.taufik.notes.room.model.Notes;
 public abstract class NotesDatabase extends RoomDatabase {
 
     private static NotesDatabase instance;
+    private static RoomDatabase.Callback roomCallback = new RoomDatabase.Callback() {
 
-    public abstract NotesDao notesDao();
+        @Override
+        public void onCreate(@NonNull SupportSQLiteDatabase db) {
+            super.onCreate(db);
+
+            new PopulateDbAsyncTask(instance).execute();
+        }
+    };
 
     public static synchronized NotesDatabase getInstance(Context context) {
 
@@ -32,15 +39,7 @@ public abstract class NotesDatabase extends RoomDatabase {
         return instance;
     }
 
-    private static RoomDatabase.Callback roomCallback = new RoomDatabase.Callback(){
-
-        @Override
-        public void onCreate(@NonNull SupportSQLiteDatabase db) {
-            super.onCreate(db);
-
-            new PopulateDbAsyncTask(instance).execute();
-        }
-    };
+    public abstract NotesDao notesDao();
 
     private static class PopulateDbAsyncTask extends AsyncTask<Void, Void, Void> {
 

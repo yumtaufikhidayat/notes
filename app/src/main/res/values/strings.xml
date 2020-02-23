@@ -13,7 +13,7 @@
     <string name="tvNoteDeleted">Note deleted</string>
     <string name="tvNoteNotSaved">Note not saved</string>
     <string name="btnSave">Save</string>
-    <string name="tvConfirmDelete">Delete notes ?</string>
+    <string name="tvConfirmDelete">Delete all notes ?</string>
     <string name="tvNo">No</string>
     <string name="tvYes">Yes</string>
     <string name="tvNotesDeleted">All notes deleted</string>

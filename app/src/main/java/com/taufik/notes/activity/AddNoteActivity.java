@@ -1,7 +1,5 @@
 package com.taufik.notes.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +7,8 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.NumberPicker;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.taufik.notes.R;
 
@@ -34,12 +34,25 @@ public class AddNoteActivity extends AppCompatActivity {
 
         setInit();
 
-        nbPriority.setMinValue(1);
-        nbPriority.setMaxValue(10);
+        setNumberPickerPriority();
 
         setGetSupportActionBar();
 
         setLlSaveOnClickListener();
+    }
+
+    private void setNumberPickerPriority() {
+        nbPriority.setMinValue(1);
+        nbPriority.setMaxValue(3);
+    }
+
+    private void setLlSaveOnClickListener() {
+        llSave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                saveNote();
+            }
+        });
     }
 
     private void saveNote() {
@@ -60,15 +73,6 @@ public class AddNoteActivity extends AppCompatActivity {
 
         setResult(RESULT_OK, data);
         finish();
-    }
-
-    private void setLlSaveOnClickListener() {
-        llSave.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                saveNote();
-            }
-        });
     }
 
     private void setGetSupportActionBar() {
