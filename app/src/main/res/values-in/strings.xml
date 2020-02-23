@@ -9,8 +9,11 @@
     <string name="tvDelete">Hapus</string>
     <string name="tvDeleteAllNotes">Delete all notes</string>
     <string name="tvAddNote">Tambah catatan</string>
+    <string name="tvEditNote">Edit catatan</string>
+    <string name="tvFailedEditNote">Catatan tidak dapat diperbarui</string>
     <string name="tvAllFieldsRequired">Kolom tidak boleh kosong</string>
     <string name="tvNoteSaved">Catatan tersimpan</string>
+    <string name="tvNoteUpdated">Catatan diperbarui</string>
     <string name="tvNoteDeleted">Catatan terhapus</string>
     <string name="tvNoteNotSaved">Catatan tidak tersimpan</string>
     <string name="btnSave">Save</string>

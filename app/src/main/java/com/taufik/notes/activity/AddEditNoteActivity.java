@@ -12,8 +12,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.taufik.notes.R;
 
-public class AddNoteActivity extends AppCompatActivity {
+public class AddEditNoteActivity extends AppCompatActivity {
 
+    public static final String EXTRA_ID =
+            "com.taufik.notes.activity.EXTRA_ID";
     public static final String EXTRA_TITLE =
             "com.taufik.notes.activity.EXTRA_TITLE";
 
@@ -71,14 +73,33 @@ public class AddNoteActivity extends AppCompatActivity {
         data.putExtra(EXTRA_DESCRIPTION, noteDescription);
         data.putExtra(EXTRA_PRIORITY, notePriority);
 
+        int id = getIntent().getIntExtra(EXTRA_ID, -1);
+
+        if (id != -1) {
+            data.putExtra(EXTRA_ID, id);
+        }
+
         setResult(RESULT_OK, data);
         finish();
     }
 
     private void setGetSupportActionBar() {
+
         if (getSupportActionBar() != null) {
             getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_close);
-            getSupportActionBar().setTitle(R.string.tvAddNote);
+
+            Intent intent = getIntent();
+
+            if (intent.hasExtra(EXTRA_ID)) {
+                setTitle(R.string.tvEditNote);
+                etTitle.setText(intent.getStringExtra(EXTRA_TITLE));
+                etDescription.setText(intent.getStringExtra(EXTRA_DESCRIPTION));
+                nbPriority.setValue(intent.getIntExtra(EXTRA_PRIORITY, 1));
+
+            } else {
+                getSupportActionBar().setTitle(R.string.tvAddNote);
+            }
+
         }
     }
 

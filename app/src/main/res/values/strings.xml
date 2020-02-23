@@ -8,8 +8,11 @@
     <string name="tvDelete">Delete</string>
     <string name="tvDeleteAllNotes">Delete all notes</string>
     <string name="tvAddNote">Add note</string>
+    <string name="tvEditNote">Edit note</string>
+    <string name="tvFailedEditNote">Note can\'t be updated</string>
     <string name="tvAllFieldsRequired">All fields can\'t be empty</string>
     <string name="tvNoteSaved">Note saved</string>
+    <string name="tvNoteUpdated">Note updated</string>
     <string name="tvNoteDeleted">Note deleted</string>
     <string name="tvNoteNotSaved">Note not saved</string>
     <string name="btnSave">Save</string>
