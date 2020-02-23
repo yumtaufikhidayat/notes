@@ -11,7 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c1cb323-692f-4b55-873a-647e3274da57" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-in/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-in/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values-in/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+            <state relative-caret-position="75">
+              <caret line="5" column="51" lean-forward="true" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -668,8 +672,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values-in/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+        <state relative-caret-position="75">
+          <caret line="5" column="51" lean-forward="true" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
         </state>
       </provider>
     </entry>
