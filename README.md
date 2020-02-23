@@ -1,4 +1,4 @@
-# notes
+# Room notes
 A simple note Android application using Room, Live Data, and MVVM. This application built with:
 
 #### Programming Language
