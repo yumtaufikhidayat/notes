@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
         notesViewModel.getAllNotes().observe(this, new Observer<List<Notes>>() {
             @Override
             public void onChanged(List<Notes> notes) {
-                adapter.setNotes(notes);
+                adapter.submitList(notes);
             }
         });
 
@@ -162,14 +162,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-        switch (item.getItemId()) {
-            case R.id.deleteAllNotes:
-                showDeleteAllNotes();
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
+        if (item.getItemId() == R.id.deleteAllNotes) {
+            showDeleteAllNotes();
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 
     private void showDeleteAllNotes() {
