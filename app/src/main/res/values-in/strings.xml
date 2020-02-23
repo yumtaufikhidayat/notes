@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Notes</string>
+    <string name="app_name">Room Notes</string>
     <string name="tvPriorityNumber">1</string>
     <string name="tvTitle">Judul</string>
     <string name="tvDescription">Deskripsi</string>

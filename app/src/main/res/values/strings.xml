@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Notes</string>
+    <string name="app_name">Room Notes</string>
     <string name="tvPriorityNumber">1</string>
     <string name="tvTitle">Title</string>
     <string name="tvDescription">Description</string>
