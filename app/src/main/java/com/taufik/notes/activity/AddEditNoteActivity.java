@@ -3,8 +3,8 @@ package com.taufik.notes.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.NumberPicker;
 import android.widget.Toast;
 
@@ -27,7 +27,7 @@ public class AddEditNoteActivity extends AppCompatActivity {
 
     EditText etTitle, etDescription;
     NumberPicker nbPriority;
-    LinearLayout llSave;
+    Button btnSave;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +40,7 @@ public class AddEditNoteActivity extends AppCompatActivity {
 
         setGetSupportActionBar();
 
-        setLlSaveOnClickListener();
+        setbtnSaveOnClickListener();
     }
 
     private void setNumberPickerPriority() {
@@ -48,8 +48,8 @@ public class AddEditNoteActivity extends AppCompatActivity {
         nbPriority.setMaxValue(3);
     }
 
-    private void setLlSaveOnClickListener() {
-        llSave.setOnClickListener(new View.OnClickListener() {
+    private void setbtnSaveOnClickListener() {
+        btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 saveNote();
@@ -107,6 +107,6 @@ public class AddEditNoteActivity extends AppCompatActivity {
         etTitle = findViewById(R.id.etTitle);
         etDescription = findViewById(R.id.etDescription);
         nbPriority = findViewById(R.id.nbPriority);
-        llSave = findViewById(R.id.llSave);
+        btnSave = findViewById(R.id.btnSave);
     }
 }
