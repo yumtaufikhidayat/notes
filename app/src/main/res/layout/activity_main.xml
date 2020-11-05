@@ -10,6 +10,7 @@
         android:id="@+id/recyclerViewMain"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:scrollbars="vertical"
         tools:listitem="@layout/notes_item"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
